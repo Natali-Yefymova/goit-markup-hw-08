@@ -1,0 +1,41 @@
+.examples {
+  padding-bottom: 94px;
+}
+.title-section {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  color: var(--text-black);
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.exaples-list {
+  display: flex;
+  justify-content: space-between;
+
+  & .examples-item + .examples-item {
+    margin-left: 30px;
+  }
+}
+
+.examples-thumb {
+  position: relative;
+}
+.title-examples {
+  position: absolute;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-white);
+}

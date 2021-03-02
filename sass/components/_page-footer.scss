@@ -1,0 +1,31 @@
+.footer-place {
+  font-size: 14px;
+  line-height: 1.713px;
+  letter-spacing: 0.03em;
+  color: var(--text-white);
+}
+.footer-main {
+  background-color: var(--bgd-dark-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-contacts-list {
+  margin-top: 20px;
+  & .footer-contacts + .footer-contacts {
+    margin-top: 9px;
+  }
+}
+
+.footer-contacts-links {
+  font-size: 14px;
+  line-height: 1.713;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact {
+  display: flex;
+  justify-content: baseline;
+}
+.footer-contact-container {
+  margin-right: 70px;
+}

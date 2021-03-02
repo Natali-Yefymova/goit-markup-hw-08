@@ -1,0 +1,41 @@
+.advantages-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages-title {
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-black);
+
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.advantages-examples {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages-list {
+  display: inline-block;
+  width: 270px;
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+.advantages-text {
+  color: var(--text-grey);
+  font-size: 14px;
+  line-height: 1.713;
+  letter-spacing: 0.03em;
+}
+.advantages-icon {
+  padding: 25px 102px;
+  background-color: var(--bgd-light-color);
+  margin-bottom: 30px;
+}
+.adv-icon {
+  width: 70px;
+  height: 70px;
+}

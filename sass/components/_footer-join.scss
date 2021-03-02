@@ -1,0 +1,23 @@
+.join-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--text-white);
+}
+.join {
+  padding-top: 12px;
+
+  & .social-link {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  & .social-icons {
+    fill: var(--text-white);
+  }
+}
+
+.footer-join-text {
+  margin-bottom: 0;
+}
