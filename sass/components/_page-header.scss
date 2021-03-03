@@ -75,12 +75,14 @@
 }
 
 .header-contacts-links {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     color: var(--text-white);
-    align-items: center;
     & .navigation-list + .navigation-list {
       margin-left: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      align-items: center;
     }
   }
 }
