@@ -51,6 +51,12 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
 .button {
   font-style: inherit;
   font-family: inherit;

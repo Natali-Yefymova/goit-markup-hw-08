@@ -10,10 +10,13 @@
   width: 100%;
   padding: 0 15px;
   border: 1px solid red;
-}
-@media screen and (min-width: 480px) {
-  .container {
+
+  @media screen and (min-width: 480px) {
     width: 480px;
     margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
 }
