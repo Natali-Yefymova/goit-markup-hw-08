@@ -16,8 +16,15 @@
   & .social-icons {
     fill: var(--text-white);
   }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+    padding-top: 0;
+  }
 }
 
 .footer-join-text {
-  margin-bottom: 0;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 94px;
+  }
 }

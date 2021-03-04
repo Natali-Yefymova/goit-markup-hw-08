@@ -1,6 +1,23 @@
 .footer-form {
   padding-top: 12px;
-  margin-left: 94px;
+
+  // @media screen and(min-width:768px) and(max-width:1199px) {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   margin: 0 auto;
+  // }
+
+  @media screen and(min-width:1200px) {
+    margin-left: 94px;
+    display: flex;
+  }
+}
+
+.form-container {
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    margin: 0 auto;
+  }
 }
 .footer-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -9,15 +26,23 @@
   background-color: transparent;
   padding: 16px;
   width: 358px;
+  height: 50px;
   margin-right: 12px;
   color: var(--text-white);
 
   &:focus {
     outline: none;
   }
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
 }
 
 .footer-form-icon {
   width: 24px;
   height: 24px;
+  margin-left: 10px;
 }
