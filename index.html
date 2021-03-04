@@ -30,6 +30,13 @@
                         </li>
                     </ul>
                 </nav>
+                <button type="button" class="burger-btn"  data-menu-button>
+                    <svg class="burger-icon">
+                        <use href="./images/sprite/symbol-defs.svg#menu">
+
+                        </use>
+                    </svg>
+                </button>
                 <address class="header-contacts">
                     <ul class="header-contacts-links list">
                         <li class="navigation-list">
@@ -50,20 +57,60 @@
                 
                 </address>
            </div>
-       
+       <div class="mobile-menu" data-menu>
+<button type="button" class="mobile-close" data-menu-close>
+    <svg class="mobile-close_button">
+        <use href="./images/sprite/symbol-defs.svg#icon-close"></use>
+    </svg> </button>
+        <ul class="mobile-menu__nav list">
+            <li class="mobile-menu__item">
+                <a href="./index.html" class="mobile-menu-nav__link link current-mobile">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="mobile-menu-nav__link link">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="" class="mobile-menu-nav__link link">Контакты</a>
+            </li>
+        </ul>
+       <div class="mobile-contacts-container">
+            <ul class="mobile-menu__contacts list">
+                <li class="mobile-contacts-item">
+                    <a href="tel:+380961111111" class="mobile-phone-link link">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-contacts-item ">
+                    <a href="mailto:info@devstudio.com" class="mobile-contact-link link">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__links list">
+                <li class="mobile-menu__link">
+                    <a href="" class="mobile-social-link link">Instagram</a>
+                </li>
+                <li class="mobile-menu__link">
+                    <a href="" class="mobile-social-link link">Twitter</a>
+                </li>
+                <li class="mobile-menu__link">
+                    <a href="" class="mobile-social-link link">Facebook</a>
+                </li>
+                <li class="mobile-menu__link">
+                    <a href="" class="mobile-social-link link">LinkedIn</a>
+                </li>
+            </ul>
+       </div>
+       </div>
     </header>
     <main>
         <!-- Hero -->
-        <!-- <section class="section-hero">
+        <section class="section-hero">
            <div class="container-hero">
                 <h1 class="hero-title">
                     Эффективные решения <br> для вашего бизнеса
                 </h1>
                 <button type="button" class="button-hero" data-modal-open>Заказать услугу</button>
            </div>
-        </section> -->
+        </section>
         <!-- Advantages -->
-        <!-- <section class="advantages-section">
+        <section class="advantages-section">
             <div class="container advantages-container">
                 <h2 class="visually-hidden">Преимущества</h2>
                 <ul class="advantages-examples list">
@@ -111,15 +158,26 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- What we do -->
-        <!-- <section class="examples">
+        <section class="examples">
             <div class="container">
                 <h2 class="title-section">Чем мы занимаемся</h2>
                 <ul class="exaples-list list">
                     <li class="examples-item">
                         <div class="examples-thumb">
-                            <img src="./images/examples/desktop.jpg" alt="Десктопные приложения" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                                            ./images/examples/img1.webp    1x,
+                                            ./images/examples/img1@2x.webp 2x
+                                          " media="(min-width: 1200px)" type="image/webp" />
+                            <source srcset="
+                                            ./images/examples/img1.jpg    1x,
+                                            ./images/examples/img1@2x.jpg 2x
+                                          " media="(min-width: 1200px)" />
+                            <img class="we-doing-img" src="./images/examples/img1.jpg" alt="Написание кода приложения" width="370"
+                                height="294" />
+                        </picture>
                             
                                 <p class="title-examples">Десктопные приложения</p>
                           
@@ -127,7 +185,18 @@
                     </li>
                     <li class="examples-item">
                         <div class="examples-thumb">
-                        <img src="./images/examples/mobile.jpg" alt="Мобильные приложения" width="370" height="294">
+                    <picture>
+                        <source srcset="
+                                        ./images/examples/img2.webp    1x,
+                                        ./images/examples/img2@2x.webp 2x
+                                      " media="(min-width: 1200px)" type="image/webp" />
+                        <source srcset="
+                                        ./images/examples/img2.jpg    1x,
+                                        ./images/examples/img2@2x.jpg 2x
+                                      " media="(min-width: 1200px)" />
+                        <img class="we-doing-img" src="./images/examples/img2.jpg" alt="Синхронизация с телефоном" width="370"
+                            height="294" />
+                    </picture>
                    
                         <p class="title-examples">Мобильные приложения</p>
                        
@@ -135,7 +204,17 @@
                     </li>
                     <li class="examples-item">
                         <div class="examples-thumb">
-                        <img src="./images/examples/design.jpg" alt="Дизайнерские решения" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                                            ./images/examples/img3.webp    1x,
+                                            ./images/examples/img3@2x.webp 2x
+                                          " media="(min-width: 1200px)" type="image/webp" />
+                            <source srcset="
+                                            ./images/examples/img3.jpg    1x,
+                                            ./images/examples/img3@2x.jpg 2x
+                                          " media="(min-width: 1200px)" />
+                            <img class="we-doing-img" src="./images/examples/img3.jpg" alt="Выбор цвета" width="370" height="294" />
+                        </picture>
                        
                             <p class="title-examples">Дизайнерские решения</p>
                      
@@ -143,15 +222,44 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section> 
         <!-- Team -->
-        <!-- <section class="section-team">
+        <section class="section-team">
            <div class="container team-container">
-                <h2 class="title-section"> Наша команда</h2>
+                <h2 class="title-section team-title"> Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-card">
-                        
-                            <img src="./images/team/img-1.jpg" alt="Игорь Демьяненко" width="270" height="260">
+
+
+<picture>
+    <source srcset="
+                    ./images/team/Игорь-Демьяненко/Игорь-Демьяненко-desktop.webp    1x,
+                    ./images/team/Игорь-Демьяненко/Игорь-Демьяненко-desktop@2x.webp 2x
+                  " media="(min-width: 1200px)" type="image/webp" />
+    <source srcset="
+                    ./images/team/Игорь-Демьяненко/Игорь-Демьяненко-desktop.jpg    1x,
+                    ./images/team/Игорь-Демьяненко/Игорь-Демьяненко-desktop@2x.jpg 2x
+                  " media="(min-width: 1200px)" />
+    <source srcset="
+                    ./images/team/Игорь-Демьяненко/Игорь-Демьяненко-tablet.webp    1x,
+                    ./images/team/Игорь-Демьяненко/Игорь-Демьяненко-tablet@2x.webp 2x
+                  " media="(min-width: 768px)" type="image/webp" />
+    <source srcset="
+                    ./images/team/Игорь-Демьяненко/Игорь-Демьяненко-tablet.jpg    1x,
+                    ./images/team/Игорь-Демьяненко/Игорь-Демьяненко-tablet@2x.jpg 2x
+                  " media="(min-width: 768px)" />
+    <source srcset="
+                    ./images/team/Игорь-Демьяненко/Игорь-Демьяненко-mobile.webp    1x,
+                    ./images/team/Игорь-Демьяненко/Игорь-Демьяненко-mobile@2x.webp 2x
+                  " media="(min-width: 320px)" type="image/webp" />
+    <source srcset="
+                    ./images/team/Игорь-Демьяненко/Игорь-Демьяненко-mobile.jpg    1x,
+                    ./images/team/Игорь-Демьяненко/Игорь-Демьяненко-mobile@2x.jpg 2x
+                  " media="(min-width: 320px)" />
+    <img class="team-img" src="./images/team/Игорь-Демьяненко/Игорь-Демьяненко-desktop.jpg"
+        alt="Фото Игорь Демьяненко" />
+</picture>
+
                             <div class="team-card-container">
                             <h3 class="team-person-name">Игорь Демьяненко</h3>
                             <p lang=en class="team-personal-descr"> Product Designer</p>
@@ -188,7 +296,38 @@
                         </div>
                     </li>
                     <li class="team-card">
-                        <img src="./images/team/repina.jpg" alt="Ольга Репина" width="270" height="260">
+
+
+
+<picture>
+    <source srcset="
+                    ./images/team/Ольга-Репина/Ольга-Репина-desktop.webp    1x,
+                    ./images/team/Ольга-Репина/Ольга-Репина-desktop@2x.webp 2x
+                  " media="(min-width: 1200px)" type="image/webp" />
+    <source srcset="
+                    ./images/team/Ольга-Репина/Ольга-Репина-desktop.jpg    1x,
+                    ./images/team/Ольга-Репина/Ольга-Репина-desktop@2x.jpg 2x
+                  " media="(min-width: 1200px)" />
+    <source srcset="
+                    ./images/team/Ольга-Репина/Ольга-Репина-tablet.webp    1x,
+                    ./images/team/Ольга-Репина/Ольга-Репина-tablet@2x.webp 2x
+                  " media="(min-width: 768px)" type="image/webp" />
+    <source srcset="
+                    ./images/team/Ольга-Репина/Ольга-Репина-tablet.jpg    1x,
+                    ./images/team/Ольга-Репина/Ольга-Репина-tablet@2x.jpg 2x
+                  " media="(min-width: 768px)" />
+    <source srcset="
+                    ./images/team/Ольга-Репина/Ольга-Репина-mobile.webp    1x,
+                    ./images/team/Ольга-Репина/Ольга-Репина-mobile@2x.webp 2x
+                  " media="(min-width: 320px)" type="image/webp" />
+    <source srcset="
+                    ./images/team/Ольга-Репина/Ольга-Репина-mobile.jpg    1x,
+                    ./images/team/Ольга-Репина/Ольга-Репина-mobile@2x.jpg 2x
+                  " media="(min-width: 320px)" />
+    <img class="team-img" src="./images/team/Ольга-Репина/Ольга-Репина-desktop.jpg" alt="Фото Ольга Репина" />
+</picture>
+
+                        
                         <div class="team-card-container">
                         <h3 class="team-person-name">Ольга Репина</h3>
                         <p lang=en class="team-personal-descr">Frontend Developer</p>
@@ -225,7 +364,34 @@
                         </div>
                     </li>
                     <li class="team-card">
-                        <img src="./images/team/tarasov.jpg" alt="Николай Тарасов" width="270" height="260">
+                    <picture>
+                        <source srcset="
+                                        ./images/team/Николай-Тарасов/Николай-Тарасов-desktop.webp    1x,
+                                        ./images/team/Николай-Тарасов/Николай-Тарасов-desktop@2x.webp 2x
+                                      " media="(min-width: 1200px)" type="image/webp" />
+                        <source srcset="
+                                        ./images/team/Николай-Тарасов/Николай-Тарасов-desktop.jpg    1x,
+                                        ./images/team/Николай-Тарасов/Николай-Тарасов-desktop@2x.jpg 2x
+                                      " media="(min-width: 1200px)" />
+                        <source srcset="
+                                        ./images/team/Николай-Тарасов/Николай-Тарасов-tablet.webp    1x,
+                                        ./images/team/Николай-Тарасов/Николай-Тарасов-tablet@2x.webp 2x
+                                      " media="(min-width: 768px)" type="image/webp" />
+                        <source srcset="
+                                        ./images/team/Николай-Тарасов/Николай-Тарасов-tablet.jpg    1x,
+                                        ./images/team/Николай-Тарасов/Николай-Тарасов-tablet@2x.jpg 2x
+                                      " media="(min-width: 768px)" />
+                        <source srcset="
+                                        ./images/team/Николай-Тарасов/Николай-Тарасов-mobile.webp    1x,
+                                        ./images/team/Николай-Тарасов/Николай-Тарасов-mobile@2x.webp 2x
+                                      " media="(min-width: 320px)" type="image/webp" />
+                        <source srcset="
+                                        ./images/team/Николай-Тарасов/Николай-Тарасов-mobile.jpg    1x,
+                                        ./images/team/Николай-Тарасов/Николай-Тарасов-mobile@2x.jpg 2x
+                                      " media="(min-width: 320px)" />
+                        <img class="team-img" src="./images/team/Николай-Тарасов/Николай-Тарасов-desktop.jpg"
+                            alt="Фото Николай Тарасов" />
+                    </picture>
                         <div class="team-card-container">
                         <h3 class="team-person-name">Николай Тарасов</h3>
                         <p lang=en class="team-personal-descr">Marketing</p>
@@ -262,7 +428,33 @@
                         </div>
                     </li>
                     <li class="team-card">
-                        <img src="./images/team/ermakov.jpg" alt="Михаил Ермаков" width="270" height="260">
+                        <picture>
+                            <source srcset="
+                                            ./images/team/Михаил-Ермаков/Михаил-Ермаков-desktop.webp    1x,
+                                            ./images/team/Михаил-Ермаков/Михаил-Ермаков-desktop@2x.webp 2x
+                                          " media="(min-width: 1200px)" type="image/webp" />
+                            <source srcset="
+                                            ./images/team/Михаил-Ермаков/Михаил-Ермаков-desktop.jpg    1x,
+                                            ./images/team/Михаил-Ермаков/Михаил-Ермаков-desktop@2x.jpg 2x
+                                          " media="(min-width: 1200px)" />
+                            <source srcset="
+                                            ./images/team/Михаил-Ермаков/Михаил-Ермаков-tablet.webp    1x,
+                                            ./images/team/Михаил-Ермаков/Михаил-Ермаков-tablet@2x.webp 2x
+                                          " media="(min-width: 768px)" type="image/webp" />
+                            <source srcset="
+                                            ./images/team/Михаил-Ермаков/Михаил-Ермаков-tablet.jpg    1x,
+                                            ./images/team/Михаил-Ермаков/Михаил-Ермаков-tablet@2x.jpg 2x
+                                          " media="(min-width: 768px)" />
+                            <source srcset="
+                                            ./images/team/Михаил-Ермаков/Михаил-Ермаков-mobile.webp    1x,
+                                            ./images/team/Михаил-Ермаков/Михаил-Ермаков-mobile@2x.webp 2x
+                                          " media="(min-width: 320px)" type="image/webp" />
+                            <source srcset="
+                                            ./images/team/Михаил-Ермаков/Михаил-Ермаков-mobile.jpg    1x,
+                                            ./images/team/Михаил-Ермаков/Михаил-Ермаков-mobile@2x.jpg 2x
+                                          " media="(min-width: 320px)" />
+                            <img class="team-img" src="./images/team/Михаил-Ермаков/Михаил-Ермаков-desktop.jpg" alt="Фото Михаил Ермаков" />
+                        </picture>
                         <div class="team-card-container">
                         <h3 class="team-person-name">Михаил Ермаков</h3>
                         <p lang=en class="team-personal-descr">UI Designer</p>
@@ -300,11 +492,11 @@
                     </li>
                 </ul>
            </div>
-        </section> -->
+        </section>
         <!-- Customers -->
-        <!-- <section class="section-customers">
+        <section class="section-customers">
             <div class="container">
-                <h2 class="title-section">Постоянные клиенты</h2>
+                <h2 class="title-section customer-title">Постоянные клиенты</h2>
                 <ul class=" customer-list list">
                     <li class="customers">
                         <a href="" class="customers-link link ">
@@ -356,7 +548,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
     <!-- <footer class="footer-main">
         <div class="container">
