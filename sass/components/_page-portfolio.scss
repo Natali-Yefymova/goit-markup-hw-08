@@ -37,7 +37,9 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
     margin-right: 30px;
+  }
 
+  @media screen and (min-width: 1200px) {
     &:nth-child(3n) {
       margin-right: 0px;
     }
@@ -102,9 +104,19 @@
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
 }
 .portfolio-list-img {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     width: 100%;
+  }
+}
+
+.portfolio-descr.first-descr {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 142px;
   }
 }

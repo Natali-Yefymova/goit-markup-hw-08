@@ -908,6 +908,9 @@ img {
     margin-bottom: 30px;
     margin-right: 30px;
   }
+}
+
+@media screen and (min-width: 1200px) {
   .portfolio-item:nth-child(3n) {
     margin-right: 0px;
   }
@@ -974,9 +977,21 @@ img {
   border-left: 1px solid #eeeeee;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-descr {
+    width: 354px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .portfolio-list-img {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-descr.first-descr {
+    height: 142px;
   }
 }
 
@@ -994,6 +1009,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
