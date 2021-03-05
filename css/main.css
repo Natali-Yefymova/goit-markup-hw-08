@@ -1364,14 +1364,13 @@ img {
   left: 50%;
   background-color: var(--text-white);
   width: 100%;
-  max-width: 480px;
+  max-width: 767px;
   height: 100vh;
   transform: translateX(-50%) translateY(-100%);
   padding: 48px 40px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
+  flex-direction: column;
   z-index: 1;
 }
 
@@ -1402,6 +1401,10 @@ img {
 
 .mobile-contacts-item {
   margin-top: 32px;
+}
+
+.mobile-contacts-container {
+  margin-top: auto;
 }
 
 .mobile-phone-link {
@@ -1448,5 +1451,9 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-blue);
+}
+
+.mobile-menu__nav {
+  margin-right: auto;
 }
 /*# sourceMappingURL=main.css.map */
