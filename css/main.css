@@ -865,9 +865,10 @@ img {
 }
 
 .advantages-icon {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
   width: 100%;
   max-width: 450px;
   background-color: var(--bgd-light-color);
@@ -877,13 +878,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .advantages-icon {
-    padding: 25px 142px;
+    max-width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .advantages-icon {
-    padding: 25px 102px;
+    max-width: 270px;
   }
 }
 

@@ -69,9 +69,11 @@
   align-items: center;
 }
 .advantages-icon {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  // display: block;
   width: 100%;
   max-width: 450px;
   background-color: var(--bgd-light-color);
@@ -79,11 +81,11 @@
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    padding: 25px 142px;
+    max-width: 354px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 25px 102px;
+    max-width: 270px;
   }
 }
 .adv-icon {
