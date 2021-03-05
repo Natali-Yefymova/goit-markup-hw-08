@@ -733,9 +733,25 @@ img {
 }
 
 .container-hero {
-  padding: 118px 60px;
+  height: 400px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
+  padding: 118px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .container-hero {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-hero {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
+  }
 }
 
 .hero-title {
