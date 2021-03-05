@@ -1064,18 +1064,30 @@ img {
 
 .mobile-phone-link {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.176;
   letter-spacing: 0.02em;
   color: var(--accent-blue);
 }
 
+@media screen and (min-width: 386px) {
+  .mobile-phone-link {
+    font-size: 34px;
+  }
+}
+
 .mobile-contact-link {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.167;
   letter-spacing: 0.02em;
   color: var(--text-grey);
+}
+
+@media screen and (min-width: 386px) {
+  .mobile-contact-link {
+    font-size: 24px;
+  }
 }
 
 .mobile-menu__links {
@@ -1102,10 +1114,16 @@ img {
 
 .mobile-social-link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-blue);
+}
+
+@media screen and (min-width: 386px) {
+  .mobile-social-link {
+    font-size: 18px;
+  }
 }
 
 .mobile-menu__nav {
