@@ -1131,6 +1131,7 @@ img {
   border: 1px solid var(--border-color);
   border-radius: 4px;
   height: 90px;
+  width: 210px;
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -1138,12 +1139,6 @@ img {
 
 .customers-link:hover, .customers-link:focus {
   border: 1px solid var(--accent-blue);
-}
-
-@media screen and (min-width: 450px) {
-  .customers-link {
-    width: 210px;
-  }
 }
 
 @media screen and (min-width: 768px) {
