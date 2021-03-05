@@ -71,11 +71,28 @@
 }
 .portfolio-buttons {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   margin-bottom: 50px;
 
-  & .portfolio-btn + .portfolio-btn {
-    margin-left: 8px;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 0 15px;
+  }
+  @media screen and (min-width: 768px) {
+    & .portfolio-btn + .portfolio-btn {
+      margin-left: 8px;
+      margin-right: 0;
+    }
+  }
+}
+.portfolio-btn {
+  margin-top: 0;
+  @media screen and (max-width: 767px) {
+    margin-top: 15px;
+    margin-right: 8px;
+    margin-left: 0;
   }
 }
 .portfolio-button {
