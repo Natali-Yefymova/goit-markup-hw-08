@@ -342,10 +342,6 @@ img {
   margin: 0 auto;
 }
 
-.footer-container {
-  border: 2px solid yellow;
-}
-
 @media screen and (max-width: 767px) {
   .footer-container {
     padding: 60px 15px;
