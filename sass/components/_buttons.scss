@@ -39,7 +39,7 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-
+  cursor: pointer;
   border-radius: 4px;
   border: none;
   padding: 10px 32px;
@@ -59,6 +59,7 @@
   border-radius: 4px;
   border: none;
   padding: 10px 32px;
+  cursor: pointer;
 
   &.btn-modal {
     display: flex;
@@ -74,6 +75,7 @@
   flex-wrap: nowrap;
   justify-content: center;
   margin-bottom: 50px;
+  cursor: pointer;
 
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
