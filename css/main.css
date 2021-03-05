@@ -342,6 +342,16 @@ img {
   margin: 0 auto;
 }
 
+.footer-container {
+  border: 2px solid yellow;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    padding: 60px 15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-container {
     padding: 0;
@@ -492,9 +502,16 @@ img {
   outline: none;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-input {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer-input {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
@@ -668,12 +685,6 @@ img {
 .section-hero {
   background-color: var(--bgd-dark-color);
   text-align: center;
-}
-
-.container-hero {
-  padding: 118px 60px;
-  margin-left: auto;
-  margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -681,48 +692,54 @@ img {
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .container-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero/hero-mobile@2x.jpg);
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile@2x.jpg);
   }
 }
 
 @media screen and (min-width: 480px) {
-  .container-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero/hero-mobile.jpg);
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile.jpg);
     background-size: 480px 400px;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
-  .container-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero/hero-mobile@2x.jpg);
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero/hero-tablet.jpg);
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet.jpg);
     background-size: 768px 400px;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .container-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero/hero-tablet@2x.jpg);
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .container-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero/hero-desktop.jpg);
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop.jpg);
     background-size: 1600px 600px;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .container-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero/hero-desktop@2x.jpg);
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-desktop@2x.jpg);
   }
+}
+
+.container-hero {
+  padding: 118px 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -1064,6 +1081,11 @@ img {
 
 .social:not(:last-child) {
   margin-right: 10px;
+}
+
+.section-customers {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {

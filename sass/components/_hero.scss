@@ -1,11 +1,6 @@
 .section-hero {
   background-color: var(--bgd-dark-color);
   text-align: center;
-}
-.container-hero {
-  padding: 118px 60px;
-  margin-left: auto;
-  margin-right: auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -81,6 +76,11 @@
       ),
       url(../images/hero/hero-desktop@2x.jpg);
   }
+}
+.container-hero {
+  padding: 118px 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {

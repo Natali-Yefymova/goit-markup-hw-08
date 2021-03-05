@@ -342,6 +342,16 @@ img {
   margin: 0 auto;
 }
 
+.footer-container {
+  border: 2px solid yellow;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    padding: 60px 15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-container {
     padding: 0;
@@ -492,9 +502,16 @@ img {
   outline: none;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-input {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer-input {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
