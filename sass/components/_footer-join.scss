@@ -8,7 +8,7 @@
   color: var(--text-white);
 }
 .join {
-  padding-top: 12px;
+  // padding-top: 12px;
 
   & .social-link {
     background: rgba(255, 255, 255, 0.1);
@@ -25,6 +25,7 @@
 .footer-join-text {
   margin-bottom: 20px;
   @media screen and (min-width: 1200px) {
-    margin-left: 94px;
+    // margin-left: 94px;
+    margin-left: auto;
   }
 }

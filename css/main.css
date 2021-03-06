@@ -350,8 +350,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .footer-container {
-    padding: 0;
     padding: 60px 89px 60px 76px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    padding: 0;
   }
 }
 
@@ -407,8 +412,10 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-contact {
+    max-width: 1200px;
     flex-wrap: nowrap;
-    justify-content: baseline;
+    justify-content: space-between;
+    padding: 60px 15px;
   }
 }
 
@@ -436,10 +443,6 @@ img {
   color: var(--text-white);
 }
 
-.join {
-  padding-top: 12px;
-}
-
 .join .social-link {
   background: rgba(255, 255, 255, 0.1);
 }
@@ -461,7 +464,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-join-text {
-    margin-left: 94px;
+    margin-left: auto;
   }
 }
 
@@ -471,7 +474,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-form {
-    margin-left: 94px;
+    margin-left: auto;
     display: flex;
   }
 }
@@ -779,8 +782,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .advantages-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 0;
   }
 }
 
@@ -814,7 +816,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .advantages-examples {
-    justify-content: space-between;
+    margin: 0;
   }
 }
 
@@ -823,7 +825,7 @@ img {
 }
 
 .advantages-list {
-  margin: 15px 15px 30px 15px;
+  margin: 0 15px;
   max-width: 354px;
 }
 
@@ -846,12 +848,10 @@ img {
 
 @media screen and (min-width: 1200px) {
   .advantages-list {
-    display: inline-block;
+    flex-wrap: nowrap;
     max-width: 270px;
-    margin: 0;
-  }
-  .advantages-list:not(:first-child) {
-    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1103,8 +1103,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .section-customers {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 0;
   }
 }
 
@@ -1117,8 +1116,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .customer-container {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
   }
 }
 
@@ -1142,6 +1140,7 @@ img {
 @media screen and (min-width: 1200px) {
   .customer-list {
     flex-wrap: nowrap;
+    margin: 0;
   }
 }
 
